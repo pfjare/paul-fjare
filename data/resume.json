@@ -1,0 +1,34 @@
+{
+  "name": "Paul",
+  "title": "Software Engineer",
+  "experiences": [
+    {
+      "id": 1,
+      "company": "Dronesmith Technologies",
+      "title": "Mechanical Design Engineer + Software Engineer Assistant",
+      "dates": "Aug. 2014 - Mar. 2017",
+      "image": "http://www.paulfjare.com/img/quark.jpg",
+      "bullets": [
+        "Added user login and password reset functionality to a web app with a Bootstrap/Angular.js front-end and a Node.js/Express back-end. Used SendGrid API to send emails.",
+        "Wrote Python scripts to test the company’s API product.",
+        "Created tutorials for creating applications that utilized the Dronesmith API which allows for control of real or virtual drones with HTTP requests.",
+        "Served as primary writer of electronic hardware documentation and maintained API documentation.",
+        "Tested new versions of electronic hardware and software products.",
+        "Designed the mechanical components of the company’s flagship drone.",
+        "Steadily improved every aspect of the drone’s mechanical design based on feedback from customers and changes in the electronic systems."
+      ]
+    },
+    {
+      "id": 2,
+      "company": "Open Source Wifi Blinds IoT Electronic Device",
+      "title": "Mechanical Design Engineer + Software Engineer Assistant",
+      "dates": "Aug. 2014 - Mar. 2017",
+      "image": "http://www.paulfjare.com/img/rings.png",
+      "bullets": [
+        "Wrote C code for a ESP8266 micro-controller to control a motor and get data from sensors.",
+        "Android interface to control device.",
+        "TCP Websocket connection to transmit data."
+      ]
+    }
+  ]
+}
