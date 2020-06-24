@@ -1,6 +1,35 @@
 {
   "name": "Paul",
   "title": "Software Engineer",
+  "education": [
+    {
+      "id": 1,
+      "degree": "Nanodegree - Full Stack Web Developer",
+      "school": "Udacity",
+      "start_date": "Mar. 2020",
+      "graduation_date": "May 2020",
+      "bullets": [
+        "SQL and Data Modeling for the Web - Python, SQL, Postgres, SQLAlchemy",
+        "API Development and Documentation - Flask, Unittest",
+        "Identity Access Management - Auth0, Role-based access controls (RBAC)",
+        "Server Deployment and Containerization - Docker, Kubernetes"
+      ]
+    },
+    {
+      "id": 2,
+      "degree": "Master of Science – Mechanical Engineering",
+      "school": "University of Nevada, Las Vegas",
+      "start_date": "Aug. 2012",
+      "graduation_date": "Aug. 2014"
+    },
+    {
+      "id": 3,
+      "degree": "Bachelor of Science – Mechanical Engineering",
+      "school": "University of Nevada, Las Vegas",
+      "start_date": "Aug. 2007",
+      "graduation_date": "May. 2012"
+    }
+  ],
   "experiences": [
     {
       "id": 1,
@@ -21,13 +50,25 @@
     {
       "id": 2,
       "company": "Open Source Wifi Blinds IoT Electronic Device",
-      "title": "Mechanical Design Engineer + Software Engineer Assistant",
+
       "dates": "Aug. 2014 - Mar. 2017",
-      "image": "http://www.paulfjare.com/img/rings.png",
+      "image": "https://cdn.hackaday.io/images/4605521496267625193.png",
       "bullets": [
         "Wrote C code for a ESP8266 micro-controller to control a motor and get data from sensors.",
         "Android interface to control device.",
         "TCP Websocket connection to transmit data."
+      ]
+    },
+    {
+      "id": 3,
+      "company": "Savvy Streets Inc.",
+      "title": "Web Developer",
+      "dates": "2013-2016",
+      "image": "",
+      "bullets": [
+        "Worked on a three person team to sell apps on iOS Appstore.",
+        "Created static websites hosted on AWS S3 server to market apps.",
+        "Collaborated in the design of user interfaces for mobile apps."
       ]
     }
   ]

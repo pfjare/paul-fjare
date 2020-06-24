@@ -1,27 +1,43 @@
 <template>
-  <b-container>
-    <b-row>
-      <b-col> </b-col>
-    </b-row>
-    <b-row class="mt-3">
-      <b-col
-        v-for="experience in resume.experiences"
-        :key="experience.id"
-        lg="6"
-        class="mt-3 h-100"
-      >
-        <ExperienceItem :experience="experience" />
-      </b-col>
-    </b-row>
-  </b-container>
+  <div>
+    <NavBar />
+    <div id="main">
+      <b-container fluid="sm">
+        <h1>Education</h1>
+        <div
+          v-for="education in resume.education"
+          :key="education.id"
+          sm="12"
+          class="mt-3 h-100"
+        >
+          <EducationItem :education="education" />
+        </div>
+        <h1>Experience</h1>
+        <b-row class="mt-3">
+          <b-col
+            v-for="experience in resume.experiences"
+            :key="experience.id"
+            sm="12"
+            class="mt-3 h-100"
+          >
+            <ExperienceItem :experience="experience" />
+          </b-col>
+        </b-row>
+      </b-container>
+    </div>
+  </div>
 </template>
 
 <script>
 import ExperienceItem from '~/components/ExperienceItem'
+import EducationItem from '~/components/EducationItem'
+import NavBar from '~/components/NavBar'
 import resume from '~/data/resume.json'
 export default {
   components: {
-    ExperienceItem
+    NavBar,
+    ExperienceItem,
+    EducationItem
   },
   data() {
     return {
@@ -33,7 +49,7 @@ export default {
 
 <style>
 .title {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   display: block;
   font-weight: 300;
   font-size: 100px;
@@ -41,8 +57,8 @@ export default {
   letter-spacing: 1px;
 }
 #main {
-  background-color: blue;
-  height: 100px;
+  max-width: 700px;
+  margin: 0 auto;
 }
 .subtitle {
   font-weight: 300;
