@@ -34,9 +34,9 @@
     {
       "id": 1,
       "company": "Dronesmith Technologies",
-      "title": "Mechanical Design Engineer + Software Engineer Assistant",
+      "title": "Mechanical Design Engineer + Software Engineering Assistant",
       "dates": "Aug. 2014 - Mar. 2017",
-      "image": "http://www.paulfjare.com/img/quark.jpg",
+      "image": "",
       "bullets": [
         "Added user login and password reset functionality to a web app with a Bootstrap/Angular.js front-end and a Node.js/Express back-end. Used SendGrid API to send emails.",
         "Wrote Python scripts to test the company’s API product.",
@@ -51,8 +51,8 @@
       "id": 2,
       "company": "Open Source Wifi Blinds IoT Electronic Device",
 
-      "dates": "Aug. 2014 - Mar. 2017",
-      "image": "https://cdn.hackaday.io/images/4605521496267625193.png",
+      "dates": "",
+      "image": "",
       "bullets": [
         "Wrote C code for a ESP8266 micro-controller to control a motor and get data from sensors.",
         "Android interface to control device.",

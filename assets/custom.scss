@@ -1,14 +1,4 @@
-// Custom Bootstrap variable overrides go first
-$font-family-sans-serif: 'Barlow', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-  Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
-  'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' !default;
-$headings-font-family: Barlow Condensed, -apple-system, BlinkMacSystemFont,
-  'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
-  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' !default;
-
-// Then include the following
-@import 'bootstrap/scss/bootstrap.scss';
-@import 'bootstrap-vue/src/index.scss';
-
-// And define any of your custom or additional CSS/SCSS here,
-// or via an @import
+/* Import Bulma Utilities */
+@import '~bulma/sass/utilities/initial-variables';
+@import '~bulma/sass/utilities/functions';
+@import '~bulma';

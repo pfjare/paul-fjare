@@ -3,7 +3,7 @@
     <NavBar />
     <div id="main">
       <b-container fluid="sm">
-        <h1>Education</h1>
+        <h1 class="mt-4">Education</h1>
         <div
           v-for="education in resume.education"
           :key="education.id"
@@ -12,7 +12,7 @@
         >
           <EducationItem :education="education" />
         </div>
-        <h1>Experience</h1>
+        <h1 class="mt-4">Experience</h1>
         <b-row class="mt-3">
           <b-col
             v-for="experience in resume.experiences"
