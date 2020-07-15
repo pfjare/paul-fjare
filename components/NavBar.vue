@@ -1,20 +1,22 @@
 <template>
-  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <nav
+    class="navbar has-shadow is-fixed-top"
+    role="navigation"
+    aria-label="main navigation"
+  >
     <div class="navbar-brand">
-      <a class="navbar-item" href="https://bulma.io">
-        <img
-          src="https://bulma.io/images/bulma-logo.png"
-          width="112"
-          height="28"
-        />
-      </a>
+      <nuxt-link class="navbar-item" to="/">
+        <img src="~/assets/pfj.png" alt="" srcset="" />
+      </nuxt-link>
 
       <a
+        ref="burgerToggle"
         role="button"
         class="navbar-burger burger"
         aria-label="menu"
         aria-expanded="false"
         data-target="navbarBasicExample"
+        v-on:click="greet"
       >
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
@@ -22,49 +24,51 @@
       </a>
     </div>
 
-    <div id="navbarBasicExample" class="navbar-menu">
+    <div id="navbarBasicExample" ref="navMenuToggle" class="navbar-menu">
       <div class="navbar-start">
-        <a class="navbar-item">
-          Home
+        <a class="navbar-item has-text-centered">
+          About
         </a>
 
-        <a class="navbar-item">
-          Documentation
-        </a>
-
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">
-            More
-          </a>
-
-          <div class="navbar-dropdown">
-            <a class="navbar-item">
-              About
-            </a>
-            <a class="navbar-item">
-              Jobs
-            </a>
-            <a class="navbar-item">
-              Contact
-            </a>
-            <hr class="navbar-divider" />
-            <a class="navbar-item">
-              Report an issue
-            </a>
-          </div>
-        </div>
+        <nuxt-link to="/resume" class="navbar-item has-text-centered"
+          >Resume</nuxt-link
+        >
       </div>
 
       <div class="navbar-end">
-        <div class="navbar-item">
-          <div class="buttons">
-            <a class="button is-primary">
-              <strong>Sign up</strong>
-            </a>
-            <a class="button is-light">
-              Log in
-            </a>
-          </div>
+        <div class="navbar-item has-text-centered">
+          <a
+            class="button social-icon"
+            href="https://github.com/pfjare"
+            target="blank"
+          >
+            <span class="icon is-small"><fa :icon="['fab', 'github']" /> </span>
+          </a>
+          <a
+            class="button social-icon"
+            href="https://gitlab.com/pfjare"
+            target="blank"
+          >
+            <span class="icon is-small"><fa :icon="['fab', 'gitlab']" /> </span>
+          </a>
+          <a
+            class="button social-icon"
+            href="https://linkedin.com/in/paulfjare"
+            target="blank"
+          >
+            <span class="icon is-small"
+              ><fa :icon="['fab', 'linkedin']" />
+            </span>
+          </a>
+          <a
+            class="button social-icon"
+            href="https://instagram.com/pfjare"
+            target="blank"
+          >
+            <span class="icon is-small"
+              ><fa :icon="['fab', 'instagram']" />
+            </span>
+          </a>
         </div>
       </div>
     </div>
@@ -74,11 +78,37 @@
 <script>
 export default {
   name: 'ExperienceItem',
-  props: ['experience']
+  props: ['experience'],
+  methods: {
+    greet(event) {
+      this.$refs.burgerToggle.classList.toggle('is-active')
+      this.$refs.navMenuToggle.classList.toggle('is-active')
+    }
+  }
 }
 </script>
 
 <style scoped>
+.social-icon {
+  background-color: transparent;
+  height: 35px;
+  width: 35px;
+  border: 2px solid black;
+  color: black;
+  margin: 0 0.5rem;
+  border-radius: 100%;
+}
+.social-icon:hover {
+  background-color: white;
+
+  color: black;
+}
+.social-icon:focus {
+  box-shadow: none;
+}
+.fa-fw {
+  text-align: center;
+}
 #bar {
   height: 200px;
   background-color: blue;

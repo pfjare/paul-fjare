@@ -19,7 +19,7 @@ export default {
       {
         rel: 'stylesheet',
         href:
-          'https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@500&family=Open+Sans&display=swap" rel="stylesheet'
+          'https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700&display=swap" rel="stylesheet'
       }
     ]
   },
@@ -46,13 +46,23 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
-    // Doc: https://bootstrap-vue.js.org
-    'bootstrap-vue/nuxt'
+    [
+      'nuxt-fontawesome',
+      {
+        component: 'fa',
+        imports: [
+          {
+            set: '@fortawesome/free-solid-svg-icons',
+            icons: ['fas']
+          },
+          {
+            set: '@fortawesome/free-brands-svg-icons',
+            icons: ['fab']
+          }
+        ]
+      }
+    ]
   ],
-  bootstrapVue: {
-    bootstrapCSS: false, // Or `css: false`
-    bootstrapVueCSS: false // Or `bvCSS: false`
-  },
   /*
    ** Build configuration
    */
@@ -60,6 +70,7 @@ export default {
     /*
      ** You can extend webpack config here
      */
+
     extend(config, ctx) {}
   },
   vue: {

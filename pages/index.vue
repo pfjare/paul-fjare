@@ -1,43 +1,22 @@
 <template>
   <div>
     <NavBar />
-    <div id="main">
-      <b-container fluid="sm">
-        <h1 class="mt-4">Education</h1>
-        <div
-          v-for="education in resume.education"
-          :key="education.id"
-          sm="12"
-          class="mt-3 h-100"
-        >
-          <EducationItem :education="education" />
-        </div>
-        <h1 class="mt-4">Experience</h1>
-        <b-row class="mt-3">
-          <b-col
-            v-for="experience in resume.experiences"
-            :key="experience.id"
-            sm="12"
-            class="mt-3 h-100"
-          >
-            <ExperienceItem :experience="experience" />
-          </b-col>
-        </b-row>
-      </b-container>
+    <div>
+      <p>Icons</p>
+      <font-awesome-icon :icon="['fab', 'linkedin']" />
+      <font-awesome-icon :icon="['fab', 'github']" />
+      <font-awesome-icon :icon="['fab', 'facebook']" />
+      <font-awesome-icon :icon="['fas', 'coffee']" />
     </div>
   </div>
 </template>
 
 <script>
-import ExperienceItem from '~/components/ExperienceItem'
-import EducationItem from '~/components/EducationItem'
 import NavBar from '~/components/NavBar'
 import resume from '~/data/resume.json'
 export default {
   components: {
-    NavBar,
-    ExperienceItem,
-    EducationItem
+    NavBar
   },
   data() {
     return {

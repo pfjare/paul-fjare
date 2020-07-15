@@ -1,17 +1,18 @@
 <template>
   <div>
-    <h4>{{ education.degree }}</h4>
-    <h5>{{ education.school }}</h5>
-    <h5 class="text-secondary">{{ education.graduation_date }}</h5>
-    <ul
-      v-for="bullet in education.bullets"
-      :key="bullet"
-      class="text-justify mb-1 mt-2 list-unstyled"
-    >
-      <li class="">
-        {{ bullet }}
-      </li>
-    </ul>
+    <div class="columns">
+      <div class="column is-full">
+        <h3 class="">{{ education.graduation_date }}</h3>
+        <h2 class="">{{ education.degree }}</h2>
+        <h3 class="">{{ education.school }}</h3>
+
+        <ul v-for="bullet in education.bullets" :key="bullet" class="">
+          <li class="">
+            {{ bullet }}
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </template>
 
