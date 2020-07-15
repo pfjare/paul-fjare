@@ -9,8 +9,33 @@
               <div class="px-3 py-3" style="position: relative;">
                 <h1 class="">Education</h1>
                 <div v-on:click="educationCollapse" class="collapse-button">
-                  <span class="minus"><fa :icon="['fas', 'minus']" /> </span>
-                  <span class="plus collapsed"
+                  <span class="collapse-icon"
+                    ><fa :icon="['fas', 'minus']" />
+                  </span>
+                  <span class="collapse-icon hidden"
+                    ><fa :icon="['fas', 'plus']"
+                  /></span>
+                </div>
+              </div>
+              <div class="resume-section-content">
+                <div class="divider"></div>
+                <div
+                  v-for="education in resume.education"
+                  :key="education.id"
+                  class="education-item"
+                >
+                  <EducationItem :education="education" />
+                </div>
+              </div>
+            </div>
+            <div class="resume-section">
+              <div class="px-3 py-3" style="position: relative;">
+                <h1 class="">Education</h1>
+                <div v-on:click="educationCollapse" class="collapse-button">
+                  <span class="collapse-icon"
+                    ><fa :icon="['fas', 'minus']" />
+                  </span>
+                  <span class="collapse-icon hidden"
                     ><fa :icon="['fas', 'plus']"
                   /></span>
                 </div>
@@ -51,9 +76,13 @@ export default {
         .querySelector('.resume-section-content')
         .classList.toggle('collapsed')
 
-      event.currentTarget.querySelector('.minus').classList.toggle('collapsed')
+      const collapseIcons = event.currentTarget.querySelectorAll(
+        '.collapse-icon'
+      )
 
-      event.currentTarget.querySelector('.plus').classList.toggle('collapsed')
+      collapseIcons.forEach(function(icon) {
+        icon.classList.toggle('hidden')
+      })
     }
   },
   data() {
@@ -70,29 +99,25 @@ export default {
   position: absolute;
   right: 1rem;
   top: 1rem;
-  transition-property: display;
-  transition-duration: 0.5s;
 }
-.minus {
-  position: absolute;
-  right: 0;
-  top: 0;
-  display: block;
-}
-.plus {
-  position: absolute;
-  right: 0;
-  top: 0;
-  display: block;
-}
+
 .resume-section {
   border: 2px solid black;
 }
-.divider {
-  border-bottom: 2px solid black;
+.collapse-icon {
+  transition-property: color;
+  transition-duration: 0.5s;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
 }
+
 .education-item {
   padding: 0.75rem;
+}
+.hidden {
+  color: transparent;
 }
 .collapsed {
   display: none;
