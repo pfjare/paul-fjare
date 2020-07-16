@@ -1,13 +1,24 @@
 <template>
   <div>
     <NavBar />
-    <div>
-      <p>Icons</p>
-      <font-awesome-icon :icon="['fab', 'linkedin']" />
-      <font-awesome-icon :icon="['fab', 'github']" />
-      <font-awesome-icon :icon="['fab', 'facebook']" />
-      <font-awesome-icon :icon="['fas', 'coffee']" />
-    </div>
+    <section class="hero is-fullheight main">
+      <div class="hero-head"></div>
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns is-centered">
+            <div class="column is-half has-text-centered">
+              <img class="profile-image" src="~/assets/me.jpg" />
+
+              <h1 class="tagline">
+                Hi! I’m Paul Fjare. <br />
+                Welcome to my site.
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-foot"></div>
+    </section>
   </div>
 </template>
 
@@ -26,7 +37,24 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.tagline {
+  font-size: 2.5rem;
+
+  font-weight: 500;
+  margin-top: 1rem;
+}
+.profile-image {
+  display: block;
+  border-radius: 100%;
+  height: 300px;
+  width: 300px;
+  margin: 0 auto;
+}
+.main {
+  background-color: #7fffc8;
+  margin-top: -4rem;
+}
 .title {
   font-family: 'Barlow Condensed', sans-serif;
   display: block;

@@ -1,23 +1,18 @@
 <template>
   <div>
-    <b-card border-variant="primary" :img-src="experience.image" img-top>
-      <b-row>
-        <b-col class="">
-          <h3>{{ experience.company }}</h3>
-          <h5>{{ experience.title }}</h5>
-          <h5 class="text-secondary">{{ experience.dates }}</h5>
-          <ul
-            v-for="bullet in experience.bullets"
-            :key="bullet"
-            class="text-justify mb-1  mt-2 list-unstyled"
-          >
-            <li class="">
-              {{ bullet }}
-            </li>
-          </ul>
-        </b-col>
-      </b-row>
-    </b-card>
+    <div class="columns">
+      <div class="column is-full">
+        <h3 class="">{{ experience.dates }}</h3>
+        <h2>{{ experience.company }}</h2>
+        <h3>{{ experience.title }}</h3>
+
+        <ul v-for="bullet in experience.bullets" :key="bullet" class="">
+          <li class="">
+            {{ bullet }}
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </template>
 

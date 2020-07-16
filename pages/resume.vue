@@ -8,30 +8,7 @@
             <div class="resume-section">
               <div class="px-3 py-3" style="position: relative;">
                 <h1 class="">Education</h1>
-                <div v-on:click="educationCollapse" class="collapse-button">
-                  <span class="collapse-icon"
-                    ><fa :icon="['fas', 'minus']" />
-                  </span>
-                  <span class="collapse-icon hidden"
-                    ><fa :icon="['fas', 'plus']"
-                  /></span>
-                </div>
-              </div>
-              <div class="resume-section-content">
-                <div class="divider"></div>
-                <div
-                  v-for="education in resume.education"
-                  :key="education.id"
-                  class="education-item"
-                >
-                  <EducationItem :education="education" />
-                </div>
-              </div>
-            </div>
-            <div class="resume-section">
-              <div class="px-3 py-3" style="position: relative;">
-                <h1 class="">Education</h1>
-                <div v-on:click="educationCollapse" class="collapse-button">
+                <div v-on:click="sectionCollapse" class="collapse-button">
                   <span class="collapse-icon"
                     ><fa :icon="['fas', 'minus']" />
                   </span>
@@ -55,22 +32,53 @@
         </div>
       </div>
     </div>
+    <div class="section pt-0">
+      <div class="container">
+        <div class="columns  is-centered">
+          <div class="column is-half">
+            <div class="resume-section">
+              <div class="px-3 py-3" style="position: relative;">
+                <h1 class="">Experience</h1>
+                <div v-on:click="sectionCollapse" class="collapse-button">
+                  <span class="collapse-icon"
+                    ><fa :icon="['fas', 'minus']" />
+                  </span>
+                  <span class="collapse-icon hidden"
+                    ><fa :icon="['fas', 'plus']"
+                  /></span>
+                </div>
+              </div>
+              <div class="resume-section-content">
+                <div class="divider"></div>
+                <div
+                  v-for="experience in resume.experiences"
+                  :key="experience.id"
+                  class="education-item"
+                >
+                  <ExperienceItem :experience="experience" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-// import ExperienceItem from '~/components/ExperienceItem'
+import ExperienceItem from '~/components/ExperienceItem'
 import EducationItem from '~/components/EducationItem'
 import NavBar from '~/components/NavBar'
 import resume from '~/data/resume.json'
 export default {
   components: {
     NavBar,
-    EducationItem
-    // ExperienceItem,
+    EducationItem,
+    ExperienceItem
   },
   methods: {
-    educationCollapse(event) {
+    sectionCollapse(event) {
       event.currentTarget
         .closest('.resume-section')
         .querySelector('.resume-section-content')
