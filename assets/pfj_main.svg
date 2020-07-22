@@ -4,8 +4,8 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="230px" height="170px" viewBox="0 0 230 170" enable-background="new 0 0 230 170" xml:space="preserve">
 <rect x="-269.913" y="110" fill="#8EFFF6" width="249.913" height="190"/>
-<path fill="#FFFFFF" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" d="M218.5,11.5H130
-	c-5.523,0-11.5,2.977-11.5,8.5v91.5h20v-80h80V11.5z"/>
+<path fill="#FFFFFF" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M218.5,11.5H130c-5.523,0-11.5,2.977-11.5,8.5
+	v91.5h20v-80h80V11.5z"/>
 <path d="M150,30"/>
 <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M-50,40h-60c-5.522,0-10,4.478-10,10v80c0,5.522,4.478,10,10,10h60
 	c16.568,0,30-13.432,30-30V70C-20,53.432-33.432,40-50,40z M-50,120h-50V60h50c5.522,0,10,4.478,10,10v40
@@ -14,12 +14,12 @@
 <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M393,95"/>
 <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M393,95"/>
 <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M393,95"/>
-<path fill="#FFFFFF" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" d="M150,50v20h40v20v10v20
-	v15c0,2.762-2.238,5-5.001,5H150v20h40c11.045,0,20-8.955,20-20v-40V70V50H150z"/>
+<path fill="#FFFFFF" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M148.5,52.5v20h39V90v10v20v15
+	c0,2.762,0.262,7.5-2.501,7.5H147.5v20H190c11.045,0,17.5-11.455,17.5-22.5v-40V71V52.5H148.5z"/>
 <g>
-	<path fill="none" d="M90.001,40c0-5.523-4.477-10-10-10H30v20h50.001C85.524,50,90.001,45.523,90.001,40z"/>
-	<path fill="#FFFFFF" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" d="M80,11.5H20
-		c-5.522,0-11.5,2.977-11.5,8.5v91.5h20V70V50V31.5H80c5.523,0,10,4.477,10,10s-4.477,10-10,10H38.5v20H80c16.569,0,30-13.431,30-30
-		S96.569,11.5,80,11.5z"/>
+	<path fill="#FFFFFF" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M324.001,111.5c0-5.523-4.477-10-10-10h-51.5v20
+		h51.501C319.524,121.5,324.001,117.023,324.001,111.5z"/>
+	<path fill="#FFFFFF" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M80,11.5H20c-5.522,0-11.5,2.977-11.5,8.5v91.5
+		h20V70V50V31.5H80c5.523,0,10,4.477,10,10s-4.477,10-10,10H38.5v20H80c16.569,0,30-13.431,30-30S96.569,11.5,80,11.5z"/>
 </g>
 </svg>

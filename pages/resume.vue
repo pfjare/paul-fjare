@@ -1,7 +1,64 @@
 <template>
   <div id="resume">
     <NavBar />
-    <div class="section">
+    <div class="section pb-0">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-half ">
+            <div class="resume-info has-text-centered">
+              <h1 class="resume-title">Paul Fjare</h1>
+              <h2 class="resume-subtitle">Software Engineer</h2>
+              <p>Laurel, MT, USA</p>
+              <p>pfjare@gmail.com</p>
+              <p class="employment has-text-weight-semibold">
+                Actively seeking employment
+              </p>
+            </div>
+            <p class="px-2 pt-3">
+              Software Engineer transitioning from a career as a Mechanical
+              Engineer that provided experience in using code to solve
+              real-world problems and in analyzing data. Proven ability to
+              respond to customer feedback and to work within a team to solve
+              complex technical problems and develop products.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section ">
+      <div class="container">
+        <div class="columns  is-centered">
+          <div class="column is-half">
+            <div class="resume-section">
+              <div class="px-3 py-3" style="position: relative;">
+                <h1 class="">Skills</h1>
+                <div v-on:click="sectionCollapse" class="collapse-button">
+                  <span class="collapse-icon"
+                    ><fa :icon="['fas', 'minus']" />
+                  </span>
+                  <span class="collapse-icon hidden"
+                    ><fa :icon="['fas', 'plus']"
+                  /></span>
+                </div>
+              </div>
+              <div class="resume-section-content">
+                <div class="divider"></div>
+                <div class="skill-list px-3 py-2">
+                  <div
+                    v-for="skill in resume.skills"
+                    :key="skill.id"
+                    class="skill-item"
+                  >
+                    <SkillItem :skill="skill" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section pt-0">
       <div class="container">
         <div class="columns  is-centered">
           <div class="column is-half">
@@ -63,19 +120,54 @@
         </div>
       </div>
     </div>
+    <div class="section pt-0">
+      <div class="container">
+        <div class="columns  is-centered">
+          <div class="column is-half">
+            <div class="resume-section">
+              <div class="px-3 py-3" style="position: relative;">
+                <h1 class="">Projects</h1>
+                <div v-on:click="sectionCollapse" class="collapse-button">
+                  <span class="collapse-icon"
+                    ><fa :icon="['fas', 'minus']" />
+                  </span>
+                  <span class="collapse-icon hidden"
+                    ><fa :icon="['fas', 'plus']"
+                  /></span>
+                </div>
+              </div>
+              <div class="resume-section-content">
+                <div class="divider"></div>
+                <div
+                  v-for="project in resume.projects"
+                  :key="project.id"
+                  class="education-item"
+                >
+                  <ProjectItem :project="project" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 import ExperienceItem from '~/components/ExperienceItem'
 import EducationItem from '~/components/EducationItem'
+import ProjectItem from '~/components/ProjectItem'
+import SkillItem from '~/components/SkillItem'
 import NavBar from '~/components/NavBar'
 import resume from '~/data/resume.json'
 export default {
   components: {
     NavBar,
     EducationItem,
-    ExperienceItem
+    ExperienceItem,
+    ProjectItem,
+    SkillItem
   },
   methods: {
     sectionCollapse(event) {
@@ -111,6 +203,21 @@ export default {
 
 .resume-section {
   border: 2px solid black;
+  border-top: 6px solid black;
+}
+.resume-info {
+  display: block;
+}
+.resume-title {
+  font-size: 2rem;
+  margin-bottom: 0.2rem;
+  font-weight: 400;
+}
+.resume-subtitle {
+  font-size: 1.3rem;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
 }
 .collapse-icon {
   transition-property: color;
@@ -139,8 +246,6 @@ export default {
   letter-spacing: 1px;
 }
 #main {
-  max-width: 700px;
-  margin: 0 auto;
 }
 .subtitle {
   font-weight: 300;

@@ -3,6 +3,8 @@ $navbar-height: 4rem;
 $navbar-item-img-max-height: 2.5rem;
 $navbar-background-color: #7fffc8;
 $navbar-box-shadow-color: black;
+$navbar-item-color: black;
+$text: black;
 $family-sans-serif: 'Barlow Condensed', BlinkMacSystemFont, -apple-system,
   'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
   'Droid Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
@@ -20,7 +22,7 @@ a.navbar-item.is-active,
 .navbar-link:hover,
 .navbar-link.is-active {
   background: rgba(0, 0, 0, 0.05);
-  color: #4a4a4a;
+  color: black;
   text-decoration: underline;
 }
 h1,
@@ -47,4 +49,52 @@ h3 {
 }
 .divider {
   border-bottom: 2px solid black;
+}
+.menu {
+  font-size: 4rem;
+  margin-left: 8rem;
+  font-weight: 600;
+  color: black;
+
+  @include until($tablet) {
+    text-align: center;
+    line-height: 1.2;
+    margin-left: 0;
+  }
+}
+.menu a {
+  color: black;
+}
+.menu a:hover {
+  color: white;
+}
+.profile-image {
+  display: block;
+  border-radius: 100%;
+  max-width: 300px;
+  margin-right: 8rem;
+  margin-top: 0;
+  @include until($tablet) {
+    text-align: center;
+    line-height: 1.2;
+    margin-right: 0;
+    margin-top: 3rem;
+  }
+}
+
+.skill-list {
+  display: flex;
+  flex-grow: 1;
+  flex-flow: row wrap;
+  width: 100%;
+}
+.skill-item {
+  display: flex;
+  flex-basis: 25%;
+  max-width: 25%;
+}
+.skill-item span {
+  display: block;
+  margin: 0.5rem auto;
+  text-align: center;
 }

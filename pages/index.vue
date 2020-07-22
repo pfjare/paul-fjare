@@ -11,20 +11,22 @@
       </div>
       <div class="hero-body">
         <div class="container">
-          <div class="columns is-centered">
-            <div class="column is-one-third  has-text-centered">
-              <div class="menu">
-                <nuxt-link to="/about" class="has-text-centered"
-                  >About</nuxt-link
-                >
-                <nuxt-link to="/blog" class="has-text-centered">Blog</nuxt-link>
-                <nuxt-link to="/resume" class="has-text-centered"
-                  >Resume</nuxt-link
-                >
-              </div>
+          <div class="level">
+            <div class="level-item">
+              <ul class="menu ">
+                <li class="nav-list-item">
+                  <nuxt-link to="/about" class="">About</nuxt-link>
+                </li>
+                <li class="nav-list-item">
+                  <nuxt-link to="/blog" class="">Blog</nuxt-link>
+                </li>
+                <li class="nav-list-item">
+                  <nuxt-link to="/resume" class="">Resume</nuxt-link>
+                </li>
+              </ul>
             </div>
-            <div class="column is-one-third ">
-              <figure class="image">
+            <div class=" level-item">
+              <figure class="image ">
                 <img class="profile-image" src="~/assets/me.jpg" />
               </figure>
               <!-- <h1 class="tagline">
@@ -97,15 +99,6 @@ export default {
 </script>
 
 <style scoped>
-.menu {
-  font-size: 4rem;
-  margin-bottom: 0.2rem;
-  font-weight: 600;
-  color: black;
-}
-.menu a {
-  width: 100%;
-}
 .tagline {
   font-size: 2.5rem;
 
@@ -113,16 +106,11 @@ export default {
   margin-top: 1rem;
   color: black;
 }
-.profile-image {
-  display: block;
-  border-radius: 100%;
-  max-width: 300px;
-  margin: 0 auto;
-}
+
 .logo {
   display: block;
 
-  margin: 0 auto;
+  margin: 3rem auto 0 auto;
 }
 .social-buttons {
   margin-bottom: 1rem;

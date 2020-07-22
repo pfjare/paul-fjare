@@ -30,6 +30,36 @@
       "graduation_date": "May. 2012"
     }
   ],
+  "skills": [
+    "Python",
+    "Flask",
+    "SQL",
+    "CSS",
+    "HTML",
+    "JavaScript",
+    "Node.js",
+    "Angular.js",
+    "Vue.js",
+    "Photoshop ",
+    "Illustrator ",
+    "GitHub",
+    "C for embedded electronics",
+    "MATLAB"
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "Open Source Wifi Blinds IoT Electronic Device",
+
+      "dates": "",
+      "image": "",
+      "bullets": [
+        "Wrote C code for a ESP8266 micro-controller to control a motor and get data from sensors.",
+        "Android interface to control device.",
+        "TCP Websocket connection to transmit data."
+      ]
+    }
+  ],
   "experiences": [
     {
       "id": 1,
@@ -49,18 +79,6 @@
     },
     {
       "id": 2,
-      "company": "Open Source Wifi Blinds IoT Electronic Device",
-
-      "dates": "",
-      "image": "",
-      "bullets": [
-        "Wrote C code for a ESP8266 micro-controller to control a motor and get data from sensors.",
-        "Android interface to control device.",
-        "TCP Websocket connection to transmit data."
-      ]
-    },
-    {
-      "id": 3,
       "company": "Savvy Streets Inc.",
       "title": "Web Developer",
       "dates": "2013-2016",
