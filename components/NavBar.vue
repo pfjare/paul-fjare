@@ -22,12 +22,14 @@
 
     <div id="navbarBasicExample" ref="navMenuToggle" class="navbar-menu">
       <div class="navbar-start">
-        <a class="navbar-item has-text-centered">
-          About
-        </a>
-
+        <nuxt-link to="/about" class="navbar-item has-text-centered"
+          >About</nuxt-link
+        >
         <nuxt-link to="/resume" class="navbar-item has-text-centered"
           >Resume</nuxt-link
+        >
+        <nuxt-link to="/blog" class="navbar-item has-text-centered"
+          >Blog</nuxt-link
         >
       </div>
 

@@ -2,12 +2,25 @@
   <div>
     <div class="columns">
       <div class="column is-full">
-        <h3 class="">{{ project.dates }}</h3>
+        <h4 class="">{{ project.dates }}</h4>
         <h2>{{ project.title }}</h2>
-
-        <ul v-for="bullet in project.bullets" :key="bullet" class="">
-          <li class="">
+        <p>
+          {{ project.description }}
+        </p>
+        <ul>
+          <li v-for="bullet in project.bullets" :key="bullet" class="">
             {{ bullet }}
+          </li>
+        </ul>
+
+        <ul>
+          <li
+            v-for="link in project.links"
+            :key="link"
+            class=""
+            href="link.url"
+          >
+            <a>{{ link.title }}</a>
           </li>
         </ul>
       </div>
@@ -21,4 +34,12 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+a {
+  color: black;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
+</style>

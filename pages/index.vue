@@ -29,10 +29,6 @@
               <figure class="image ">
                 <img class="profile-image" src="~/assets/me.jpg" />
               </figure>
-              <!-- <h1 class="tagline">
-                Hi! I’m Paul Fjare. <br />
-                Welcome to my site.
-              </h1> -->
             </div>
           </div>
         </div>
@@ -99,21 +95,13 @@ export default {
 </script>
 
 <style scoped>
-.tagline {
-  font-size: 2.5rem;
-
-  font-weight: 500;
-  margin-top: 1rem;
-  color: black;
-}
-
 .logo {
   display: block;
-
+  max-width: 300px;
   margin: 3rem auto 0 auto;
 }
 .social-buttons {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   font-size: 3rem;
 }
 .social-icon {
@@ -135,28 +123,5 @@ export default {
 }
 .main {
   background-color: #7fffc8;
-}
-.title {
-  font-family: 'Barlow Condensed', sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-#main {
-  max-width: 700px;
-  margin: 0 auto;
-}
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
 }
 </style>

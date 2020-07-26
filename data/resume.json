@@ -49,14 +49,34 @@
   "projects": [
     {
       "id": 1,
+      "title": "Graduate Thesis Project",
+      "description": "Created a speed controller for an engine on a small aircraft that implemented a PID control algorithm written in C.",
+      "dates": "",
+      "image": ""
+    },
+    {
+      "id": 2,
       "title": "Open Source Wifi Blinds IoT Electronic Device",
-
+      "description": "",
       "dates": "",
       "image": "",
       "bullets": [
-        "Wrote C code for a ESP8266 micro-controller to control a motor and get data from sensors.",
-        "Android interface to control device.",
-        "TCP Websocket connection to transmit data."
+        "Programmed a micro-controller in C to control a motor and get data sensor data.",
+        "Created an Android app to control the device over WiFi."
+      ],
+      "links": [
+        {
+          "title": "Learn more",
+          "url": "https://hackaday.io/project/21467-wifi-blinds-esp8266-iot-device"
+        },
+        {
+          "title": "Micro-controller Source Code",
+          "url": "https://gitlab.com/pfjare/wifi-blinds-ESP8266/-/tree/master"
+        },
+        {
+          "title": "Android Source Code",
+          "url": "https://gitlab.com/pfjare/wifi-blinds-android/-/tree/master"
+        }
       ]
     }
   ],
@@ -68,13 +88,10 @@
       "dates": "Aug. 2014 - Mar. 2017",
       "image": "",
       "bullets": [
-        "Added user login and password reset functionality to a web app with a Bootstrap/Angular.js front-end and a Node.js/Express back-end. Used SendGrid API to send emails.",
+        "Added user login and password reset functionality to a web app with a Bootstrap/Angular.js front-end and a Node.js/Express back-end.",
         "Wrote Python scripts to test the company’s API product.",
-        "Created tutorials for creating applications that utilized the Dronesmith API which allows for control of real or virtual drones with HTTP requests.",
-        "Served as primary writer of electronic hardware documentation and maintained API documentation.",
-        "Tested new versions of electronic hardware and software products.",
-        "Designed the mechanical components of the company’s flagship drone.",
-        "Steadily improved every aspect of the drone’s mechanical design based on feedback from customers and changes in the electronic systems."
+        "Created tutorials for using the API and maintained API documentation.",
+        "Demonstrated an ability to improve products in response to customer feedback."
       ]
     },
     {
@@ -84,7 +101,6 @@
       "dates": "2013-2016",
       "image": "",
       "bullets": [
-        "Worked on a three person team to sell apps on iOS Appstore.",
         "Created static websites hosted on AWS S3 server to market apps.",
         "Collaborated in the design of user interfaces for mobile apps."
       ]

@@ -2,12 +2,12 @@
   <div>
     <div class="columns">
       <div class="column is-full">
-        <h3 class="">{{ education.graduation_date }}</h3>
+        <h4 class="">{{ education.graduation_date }}</h4>
         <h2 class="">{{ education.degree }}</h2>
         <h3 class="">{{ education.school }}</h3>
 
-        <ul v-for="bullet in education.bullets" :key="bullet" class="">
-          <li class="">
+        <ul>
+          <li v-for="bullet in education.bullets" :key="bullet" class="">
             {{ bullet }}
           </li>
         </ul>

@@ -2,12 +2,12 @@
   <div>
     <div class="columns">
       <div class="column is-full">
-        <h3 class="">{{ experience.dates }}</h3>
+        <h4 class="">{{ experience.dates }}</h4>
         <h2>{{ experience.company }}</h2>
         <h3>{{ experience.title }}</h3>
 
-        <ul v-for="bullet in experience.bullets" :key="bullet" class="">
-          <li class="">
+        <ul>
+          <li v-for="bullet in experience.bullets" :key="bullet" class="">
             {{ bullet }}
           </li>
         </ul>
