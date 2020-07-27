@@ -13,6 +13,9 @@ $navbar-breakpoint: 800px;
 @import '~bulma/sass/utilities/functions';
 
 @import '~bulma';
+a.navbar-item {
+  font-weight: 500;
+}
 a.navbar-item:focus,
 a.navbar-item:focus-within,
 a.navbar-item:hover,
