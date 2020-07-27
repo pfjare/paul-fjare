@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="index">
     <section class="hero is-fullheight main">
       <div class="hero-head">
         <img
@@ -11,24 +11,30 @@
       </div>
       <div class="hero-body">
         <div class="container">
-          <div class="level">
-            <div class="level-item">
-              <ul class="menu ">
-                <li class="nav-list-item">
-                  <nuxt-link to="/about" class="">About</nuxt-link>
-                </li>
-                <li class="nav-list-item">
-                  <nuxt-link to="/blog" class="">Blog</nuxt-link>
-                </li>
-                <li class="nav-list-item">
-                  <nuxt-link to="/resume" class="">Resume</nuxt-link>
-                </li>
-              </ul>
-            </div>
-            <div class=" level-item">
-              <figure class="image ">
-                <img class="profile-image" src="~/assets/me.jpg" />
-              </figure>
+          <div class="columns is-centered">
+            <div class="column is-full is-half-widescreen">
+              <div class="container">
+                <div class="level">
+                  <div class="level-item">
+                    <ul class="menu ">
+                      <li class="nav-list-item">
+                        <nuxt-link to="/about" class="">About</nuxt-link>
+                      </li>
+                      <li class="nav-list-item">
+                        <nuxt-link to="/blog" class="">Blog</nuxt-link>
+                      </li>
+                      <li class="nav-list-item">
+                        <nuxt-link to="/resume" class="">Resume</nuxt-link>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class=" level-item">
+                    <figure class="image ">
+                      <img class="profile-image" src="~/assets/me_b.jpg" />
+                    </figure>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -82,19 +88,12 @@
 </template>
 
 <script>
-// import NavBar from '~/components/NavBar'
-import resume from '~/data/resume.json'
-export default {
-  components: {},
-  data() {
-    return {
-      resume: JSON.parse(JSON.stringify(resume))
-    }
-  }
-}
+export default {}
 </script>
 
 <style scoped>
+#index {
+}
 .logo {
   display: block;
   max-width: 300px;

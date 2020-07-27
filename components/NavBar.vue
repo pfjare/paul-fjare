@@ -2,7 +2,7 @@
   <nav class="navbar " role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <nuxt-link class="navbar-item" to="/">
-        <img src="~/assets/pfj.png" alt="" srcset="" />
+        <img src="~/assets/pfj.svg" alt="" srcset="" />
       </nuxt-link>
 
       <a

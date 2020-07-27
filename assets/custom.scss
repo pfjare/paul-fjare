@@ -57,14 +57,13 @@ h4 {
 }
 .menu {
   font-size: 4rem;
-  margin-left: 10rem;
+
   font-weight: 600;
   color: black;
 
   @include until($tablet) {
     text-align: center;
     line-height: 1.2;
-    margin-left: 0;
   }
 }
 .menu a {
@@ -76,13 +75,13 @@ h4 {
 .profile-image {
   display: block;
   border-radius: 100%;
-  max-width: 300px;
-  margin-right: 10rem;
+  max-width: 360px;
+
   margin-top: 0;
   @include until($tablet) {
     text-align: center;
     line-height: 1.2;
-    margin-right: 0;
+
     margin-top: 3rem;
   }
 }
