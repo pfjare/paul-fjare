@@ -9,6 +9,10 @@ $family-sans-serif: 'Barlow Condensed', BlinkMacSystemFont, -apple-system,
   'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
   'Droid Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 $navbar-breakpoint: 800px;
+
+$button-focus-box-shadow-size: 0;
+$button-focus-box-shadow-color: bulmaRgba(black, 0.25);
+
 @import '~bulma/sass/utilities/initial-variables';
 @import '~bulma/sass/utilities/functions';
 

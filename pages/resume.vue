@@ -18,9 +18,21 @@
               Software Engineer transitioning from a career as a Mechanical
               Engineer that provided experience in using code to solve
               real-world problems and in analyzing data. Proven ability to
-              respond to customer feedback and to work within a team to solve
-              complex technical problems and develop products.
+              successfully respond to customer feedback and to work within a
+              team to solve complex technical problems and develop products.
             </p>
+            <div class="has-text-centered">
+              <a
+                class="button download-icon mt-4"
+                href="/paul-fjare_resume_7-27-2020.pdf"
+                target="blank"
+              >
+                <span>Download PDF</span>
+                <span class="icon is-small"
+                  ><fa :icon="['fas', 'download']" />
+                </span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -120,7 +132,7 @@
         </div>
       </div>
     </div>
-    <div class="section pt-0">
+    <div class="section pt-0 ">
       <div class="container">
         <div class="columns  is-centered">
           <div class="column is-half">
@@ -194,6 +206,26 @@ export default {
 </script>
 
 <style>
+.download-icon {
+  border-radius: 0;
+  background-color: white;
+  border-color: black;
+  border-width: 2px;
+  color: black;
+
+  margin: 0 auto;
+}
+.download-icon:hover {
+  border-color: black;
+  background-color: black;
+  color: white;
+}
+.download-icon:focus {
+  border-color: black;
+  color: black;
+  box-shadow: none;
+}
+
 .collapse-button {
   cursor: pointer;
   position: absolute;
