@@ -222,6 +222,7 @@ export default {
 }
 .download-icon:focus {
   border-color: black;
+  background-color: white;
   color: black;
   box-shadow: none;
 }
