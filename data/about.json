@@ -1,7 +1,5 @@
 {
   "paragraphs": [
-    "I am a software engineer transitioning from a career as a mechanical engineer.",
-    "My formal education is in mechanical engineering but coding is not new to me. I learned the fundamentals of programming as an undergrad and used code extensively during my college and professional career to solve engineering problems. I also learned to program microcontrollers for use in robotics and motor control.",
-    "During my time as a mechanical engineer at the startup company Dronesmith Technologies I was enlisted to help with software development and testing. The company’s main product was an API that allowed users to control drones with HTTP requests. I wrote Python scripts to test this API and created tutorials on using the API. I also assisted the senior software engineer by adding login functionality to an API dashboard that had a Angular.js/Bootstrap frontend and a Node.js/Express backend. This introduction to full stack web development gave me an understanding of the communication between the back-end and front-end of web applications and how to work with Javascript and CSS frameworks."
+    "Hello. My name is Paul Fjare. Welcome to my site. I am a software engineer living in Montana, USA. I moved to Montana in 2019 after living in Las Vegas, NV for 32 years to be closer to family. I graduated from the University of Nevada, Las Vegas in 2014 with a Masters Degree in Mechanical Engineering. I am currently making a career transition to software engineering. "
   ]
 }

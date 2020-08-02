@@ -40,6 +40,7 @@
     "Node.js",
     "Angular.js",
     "Vue.js",
+    "REST APIs",
     "Photoshop ",
     "Illustrator ",
     "GitHub",
@@ -84,7 +85,7 @@
     {
       "id": 1,
       "company": "Dronesmith Technologies",
-      "title": "Mechanical Design Engineer + Software Engineering Assistant",
+      "title": "Lead Mechanical Engineer + Software Engineer",
       "dates": "Aug. 2014 - Mar. 2017",
       "image": "",
       "bullets": [
