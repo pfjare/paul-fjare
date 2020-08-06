@@ -30,7 +30,7 @@
                   </div>
                   <div class=" level-item">
                     <figure class="image ">
-                      <img class="profile-image" src="~/assets/me_c.jpg" />
+                      <img class="profile-image" src="~/assets/me_b.jpg" />
                     </figure>
                   </div>
                 </div>
