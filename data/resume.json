@@ -18,6 +18,9 @@
     }
   ],
   "skills": [
+    "Injection Molded Part Design",
+    "CNC Part Design",
+    "Photo-realistic Product Rendering",
     "Solidworks",
     "Fusion 360",
     "Autodesk Inventor",
@@ -63,7 +66,7 @@
   ],
   "experiences": [
     {
-      "id": 1,
+      "id": 3,
       "company": "Dronesmith Technologies",
       "title": "Lead Mechanical Engineer + Software Engineer",
       "dates": "Aug. 2014 - Mar. 2017",
@@ -85,6 +88,33 @@
         "Produced tutorials and wrote example code for software products.",
         "Assisted software engineers with web development tasks.",
         "Demonstrated an ability to improve products in response to customer feedback."
+      ]
+    },
+    {
+      "id": 2,
+      "company": "My iCover",
+      "title": "Mechical Design Consultant",
+      "dates": "Mar. 2017 - Jan. 2020",
+      "image": "",
+      "bullets": [
+        "Developed a set of plastic iPhone accessories for a client.",
+        "Created multiple design concepts for each part and further developed the most promising designs.",
+        "Performed testing of CNC machined and 3D printed prototypes.",
+        "Created photo-realistic product renderings for marketing materials.",
+        "Worked with a manufacturer to have the parts injection molded."
+      ]
+    },
+    {
+      "id": 1,
+      "company": "Rapid Expeditionary Concepts",
+      "title": "Mechical Design Consultant",
+      "dates": "Oct. 2020 - Present",
+      "image": "",
+      "bullets": [
+        "Design of enclosures for network and radio electronics with significant heat dissipation requirements.",
+        "Printed Circuit Board design.",
+        "Finite Element Analysis informed design of a structural component on a small aircraft.",
+        "Designed CNC machined aluminum parts and carbon fiber reinforced 3D printed parts."
       ]
     }
   ]

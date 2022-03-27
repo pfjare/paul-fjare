@@ -7,7 +7,7 @@
           <div class="column is-half ">
             <div class="resume-info has-text-centered">
               <h1 class="resume-title">Paul Fjare</h1>
-              <h2 class="resume-subtitle">Software Engineer</h2>
+              <h2 class="resume-subtitle">Mechanical Engineer</h2>
               <p>Laurel, MT, USA</p>
               <p>pfjare@gmail.com</p>
               <p class="employment has-text-weight-semibold">
@@ -15,16 +15,12 @@
               </p>
             </div>
             <p class="px-2 pt-3">
-              Software Engineer transitioning from a career as a Mechanical
-              Engineer that provided experience in using code to solve
-              real-world problems and in analyzing data. Proven ability to
-              successfully respond to customer feedback and to work within a
-              team to solve complex technical problems and develop products.
+              Mechanical Design Engineer with a proven ability to successfully respond to customer feedback and to work within a team to solve complex technical problems and develop products.
             </p>
             <div class="has-text-centered">
               <a
                 class="button download-icon mt-4"
-                href="/paul-fjare_resume_7-27-2020.pdf"
+                href=""
                 target="blank"
               >
                 <span>Download PDF</span>
