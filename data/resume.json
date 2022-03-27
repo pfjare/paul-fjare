@@ -1,20 +1,7 @@
 {
   "name": "Paul",
-  "title": "Software Engineer",
+  "title": "Mechanical Engineer",
   "education": [
-    {
-      "id": 1,
-      "degree": "Nanodegree - Full Stack Web Developer",
-      "school": "Udacity",
-      "start_date": "Mar. 2020",
-      "graduation_date": "May 2020",
-      "bullets": [
-        "SQL and Data Modeling for the Web - Python, SQL, Postgres, SQLAlchemy",
-        "API Development and Documentation - Flask, Unittest",
-        "Identity Access Management - Auth0, Role-based access controls (RBAC)",
-        "Server Deployment and Containerization - Docker, Kubernetes"
-      ]
-    },
     {
       "id": 2,
       "degree": "Master of Science – Mechanical Engineering",
@@ -31,21 +18,14 @@
     }
   ],
   "skills": [
-    "Python",
-    "Flask",
-    "SQL",
-    "CSS",
-    "HTML",
-    "JavaScript",
-    "Node.js",
-    "Angular.js",
-    "Vue.js",
-    "REST APIs",
-    "Photoshop ",
-    "Illustrator ",
-    "GitHub",
-    "C for embedded electronics",
-    "MATLAB"
+    "Solidworks",
+    "Fusion 360",
+    "Autodesk Inventor",
+    "Photoshop",
+    "Illustrator",
+    "Excel",
+    "MATLAB",
+    "Python"
   ],
   "projects": [
     {
@@ -89,21 +69,22 @@
       "dates": "Aug. 2014 - Mar. 2017",
       "image": "",
       "bullets": [
-        "Added user login and password reset functionality to a web app with a Bootstrap/Angular.js front-end and a Node.js/Express back-end.",
-        "Wrote Python scripts to test the company’s API product.",
-        "Created tutorials for using the API and maintained API documentation.",
+        "Designed the airframe and overall assembly of a quadrotor commercial drone.",
+        "Improved the design of mechanical components based on customer feedback and part failure analysis.",
+        "Integrated electronic systems into compact mechanical assemblies.",
+        "Utilized 3D printed materials for lightweight production parts.",
+        "Strengthened plastic parts by removing stress concentration points and optimizing material thickness.",
+        "Designed CNC milled and routed parts that served multiple functions and were subject to many design constraints.",
+        "Produced mechanical drawings to submit for part manufacturing.",
+        "Produced BOMs and detailed cost estimates of products.",
+        "Sourced mechanical and electrical components from vendors.",
+        "Designed simple printed circuit boards to facilitate the integration electronic components into mechanical assemblies.",
+        "Designed a plastic housing for an electronic hardware product that featured a tool-less snap-in assembly.",
+        "Created detailed product renderings using Autodesk 3DS Max software.",
+        "Created and maintained technical documentation for electronic hardware and software products.",
+        "Produced tutorials and wrote example code for software products.",
+        "Assisted software engineers with web development tasks.",
         "Demonstrated an ability to improve products in response to customer feedback."
-      ]
-    },
-    {
-      "id": 2,
-      "company": "Savvy Streets Inc.",
-      "title": "Web Developer",
-      "dates": "2013-2016",
-      "image": "",
-      "bullets": [
-        "Created static websites hosted on AWS S3 server to market apps.",
-        "Collaborated in the design of user interfaces for mobile apps."
       ]
     }
   ]
