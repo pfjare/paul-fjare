@@ -121,6 +121,6 @@ export default {}
   box-shadow: none;
 }
 .main {
-  background-color: #5cd5fe;
+  background-color: #7fffc8;
 }
 </style>
